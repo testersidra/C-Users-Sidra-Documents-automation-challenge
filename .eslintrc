@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "plugin:@cypress/dev/general",
+    "plugin:@cypress/dev/tests",
+    "plugin:mocha/recommended"
+  ],
+  "plugins": [
+    "cypress",
+    "@cypress/dev",
+    "mocha"
+  ],
+  "ignorePatterns": ["app/assets/js/vendor/*", "node_modules/*"],
+  "env": {
+    "cypress/globals": true,
+    "jquery": true
+  },
+  "rules": {
+    "indent": ["error", 2, { "SwitchCase": 1, "MemberExpression": "off" }],
+    "mocha/no-exclusive-tests": "error",
+    "no-console": "warn",
+    "eqeqeq": "warn",
+    "camelcase": "error",
+    "no-unused-expressions": "error",
+    "spaced-comment": ["error", "always", { "markers": ["/"] }],
+    "no-undef": "off"
+  }
+}

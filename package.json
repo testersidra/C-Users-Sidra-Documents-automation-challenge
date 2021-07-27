@@ -1,0 +1,49 @@
+{
+  "name": "alayacare-cypress-interview-handbook",
+  "version": "1.0.0",
+  "description": "Alayacare's interview project for QA automation.",
+  "scripts": {
+    "start:section-2": "node app/assets/js/section-2/server.js",
+    "start": "serve --listen ${PORT:-8080}",
+    "start:windows": "serve --listen 8080",
+    "dev": "npm start",
+    "lint": "npx eslint app/**/*.js",
+    "cy:open": "cypress open",
+    "cy:verify": "cypress verify",
+    "cy:info": "cypress info",
+    "cy:version": "cypress version",
+    "cy:cache:list": "cypress cache list"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:AlayaCare/cypress-interview-handbook.git"
+  },
+  "author": "AlayaCare",
+  "license": "MIT",
+  "bugs": {
+    "url": "git@github.com:AlayaCare/cypress-interview-handbook.git/issues"
+  },
+  "homepage": "git@github.com:AlayaCare/cypress-interview-handbook.git#readme",
+  "dependencies": {
+    "json-server": "0.16.3",
+    "nocache": "2.1.0",
+    "serve": "11.3.0"
+  },
+  "devDependencies": {
+    "@bahmutov/print-env": "1.2.0",
+    "@cypress/eslint-plugin-dev": "5.0.0",
+    "cypress": "6.2.1",
+    "eslint": "7.0.0",
+    "eslint-plugin-cypress": "2.8.1",
+    "eslint-plugin-json-format": "2.0.1",
+    "eslint-plugin-mocha": "5.3.0",
+    "execa": "2.0.5",
+    "globby": "9.1.0",
+    "stop-build": "1.1.0",
+    "typescript": "3.7.4",
+    "yaml-lint": "1.2.4"
+  },
+  "engines": {
+    "node": ">=4"
+  }
+}
